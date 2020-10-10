@@ -7,5 +7,6 @@ public class SampleLamda {
 
     public SampleLamda() {
         log.info("hello lamda!");
+        log.debug("git test log.");
     }
 }
