@@ -84,14 +84,15 @@ public class BinaryGap {
         }
     }
 
+    public static int solution(int input) {
+        BinaryGap binaryGap = new BinaryGap();
+        return binaryGap.calculateMaxLengthZeros(binaryGap.integerToBinary(input));
+    }
 
     public static void main(String[] args) {
         StopWatch stopWatch = new StopWatch();
         stopWatch.start();
-        BinaryGap binaryGap = new BinaryGap();
-        int maxLengthZeros
-                = binaryGap.calculateMaxLengthZeros(binaryGap.integerToBinary(10000));
-        System.out.println(maxLengthZeros);
+        System.out.println(BinaryGap.solution(10000));
         stopWatch.stop();
         System.out.println(stopWatch.getTotalTimeSeconds());;
     }
