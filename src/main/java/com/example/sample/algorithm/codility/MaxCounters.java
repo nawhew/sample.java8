@@ -1,8 +1,6 @@
-package com.example.sample.algorithm;
+package com.example.sample.algorithm.codility;
 
 import java.util.Arrays;
-import java.util.List;
-import java.util.OptionalInt;
 
 public class MaxCounters {
 

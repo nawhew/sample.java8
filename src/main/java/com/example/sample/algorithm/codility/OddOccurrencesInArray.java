@@ -1,4 +1,4 @@
-package com.example.sample.algorithm;
+package com.example.sample.algorithm.codility;
 
 import java.util.HashSet;
 import java.util.Set;

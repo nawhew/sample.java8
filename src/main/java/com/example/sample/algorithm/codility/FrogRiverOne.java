@@ -1,4 +1,4 @@
-package com.example.sample.algorithm;
+package com.example.sample.algorithm.codility;
 
 import org.springframework.util.StopWatch;
 
