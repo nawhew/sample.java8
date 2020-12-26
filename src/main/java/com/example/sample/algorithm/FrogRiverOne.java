@@ -1,5 +1,7 @@
 package com.example.sample.algorithm;
 
+import org.springframework.util.StopWatch;
+
 import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.IntStream;
@@ -26,6 +28,10 @@ public class FrogRiverOne {
     }
 
     public static void main(String[] args) {
-        System.out.println(FrogRiverOne.solution(new int[]{1, 3, 1, 4, 2, 3, 5, 4}, 6));
+        StopWatch stopWatch = new StopWatch();
+        stopWatch.start();
+        System.out.println(FrogRiverOne.solution(new int[]{1, 3, 1, 4, 2, 3, 5, 4}, 5));
+        stopWatch.stop();
+        System.out.println(stopWatch.getTotalTimeSeconds());;
     }
 }
