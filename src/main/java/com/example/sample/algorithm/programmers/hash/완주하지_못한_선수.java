@@ -3,15 +3,13 @@ package com.example.sample.algorithm.programmers.hash;
 import org.springframework.util.StopWatch;
 
 import java.util.*;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class 완주하지_못한_선수 {
 
     public static void main(String[] args) {
         StopWatch stopWatch = new StopWatch();
         stopWatch.start();
-        Solution solution = new Solution();
+        Solution_완주하지_못한_선수 solution = new Solution_완주하지_못한_선수();
         System.out.println(solution.solution(new String[]{"mislav", "stanko", "mislav", "ana"}
                                             , new String[]{"stanko", "mislav", "ana"}));;
         stopWatch.stop();
@@ -19,7 +17,7 @@ public class 완주하지_못한_선수 {
     }
 }
 
-class Solution {
+class Solution_완주하지_못한_선수 {
 
     public String solution(String[] participant, String[] completion) {
         return this.solutionB(participant, completion);
