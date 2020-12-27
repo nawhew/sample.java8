@@ -58,10 +58,10 @@ public class BinaryGap {
         this.validateFirstZero(now);
         this.validateAgainZero(now);
 
-        this.before = now;
-        if(this.length > this.maxLength) {
+        if(this.isNewMaxLength(now)) {
             this.maxLength = this.length;
         }
+        this.before = now;
     }
 
     /**
@@ -84,6 +84,10 @@ public class BinaryGap {
         }
     }
 
+    private boolean isNewMaxLength(int now) {
+        return this.length > this.maxLength && now == 1 && this.before == 0;
+    }
+
     public static int solution(int input) {
         BinaryGap binaryGap = new BinaryGap();
         return binaryGap.calculateMaxLengthZeros(binaryGap.integerToBinary(input));
@@ -92,7 +96,7 @@ public class BinaryGap {
     public static void main(String[] args) {
         StopWatch stopWatch = new StopWatch();
         stopWatch.start();
-        System.out.println(BinaryGap.solution(10000));
+        System.out.println(BinaryGap.solution(15));
         stopWatch.stop();
         System.out.println(stopWatch.getTotalTimeSeconds());;
     }
